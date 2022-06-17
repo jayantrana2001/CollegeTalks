@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "engages student in colleges",
   "main": "index.js",
+  "engines": {
+    "node": "12.11.1",
+    "npm" : "6.14.8"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "node build",
+    "start": "node start",
+    "generate": "node generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
