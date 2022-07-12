@@ -16,7 +16,7 @@ A Responsive platform for College students to post Blogs, share their Interview 
 
 ## Demo
 
-
+https://user-images.githubusercontent.com/70154883/178599388-3e3b5f5c-de4a-47f1-8009-09c815639097.mp4
 
 ## Install dependencies
 `npm install`
