@@ -28,3 +28,6 @@ A Responsive platform for College students to post Blogs, share their Interview 
 
 ## 🤝 Contributing
 Contributions, issues and feature requests are welcome!
+
+## 🚀 About Me
+I'm **[Jayant Rana](www.linkedin.com/in/jayant-rana-717318197)**, currently an undergraduate student at Delhi Technological University(DTU).Currently Learning Data Structures and Algorithms, while understanding and implementing the fundamentals of computer engineering and learning web development.
