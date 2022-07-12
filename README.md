@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/rushatgabhane/GitToDo#features"><img src="https://user-images.githubusercontent.com/29673073/174050610-16d37476-335c-47d8-851e-d531ecd40c8a.png" width="100"></a>
+  <a href="https://github.com/rushatgabhane/GitToDo#features"><img src="https://www.americancampus.com/getmedia/b31fea34-7efa-4b9b-b22d-95f963cd589e/ACC-College-Talk-Logo?width=650&height=650&ext=.jpg" width="100"></a>
   <br>
   GitToDo
 </h1>
