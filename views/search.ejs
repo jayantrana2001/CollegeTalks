@@ -94,7 +94,7 @@
                 <ul id="myMenu">
 
                     <% for(let i in result){ %>
-                        <li><a href="/content/?id=<%= i %>">
+                        <li><a href="/content/<%= result[i]._id %>">
                                 <%= result[i].title %>
                             </a></li>
                         <% } %>

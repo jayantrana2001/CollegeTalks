@@ -8,7 +8,7 @@
     "npm" : "6.14.8"
   },
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node",
     "build": "node build",
     "start": "node start",
     "generate": "node generate",

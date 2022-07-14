@@ -5,7 +5,6 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: 240vh;
-
   position: relative;
 }
 #homepage-text {
@@ -24,6 +23,7 @@
   height: 75vh;
   border-radius: 10px;
   align-items: center;
+  background-color: white !important;
 }
 .card {
   padding: 20px;

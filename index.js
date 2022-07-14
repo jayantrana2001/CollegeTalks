@@ -17,6 +17,7 @@ const searchRoutes = require("./routes/search");
 const profileRoutes = require("./routes/profile");
 
 const req = require("express/lib/request");
+//const MONGODB_URI = 'mongodb://localhost:27017/collegeApp';
 const MONGODB_URI = 'mongodb+srv://jayantrana:1234@cluster0.tl4tp49.mongodb.net/?retryWrites=true&w=majority';
 
 const Post = require("./model/post");
@@ -73,14 +74,14 @@ app.get("/", async (req, res) => { // const isLoggedIn = req.get('Cookie').split
 const port = process.env.PORT || 8000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
 
-mongoose.connect(MONGODB_URI, () => {
-    console.log("connected to db");
-})
-// mongoose.connect('mongodb+srv://jayant_rana6:1234@cluster0.bnddnvs.mongodb.net/?retryWrites=true&w=majority' , {
-//     useNewUrlParser: true,
-//     useCreateIndex: true
-// } , 
-// () => {
-//     console.log("DB Connected!");
-// }
-// );
+// mongoose.connect(MONGODB_URI, () => {
+//     console.log("connected to db");
+// })
+mongoose.connect('mongodb+srv://jayant:1234@cluster0.tf62l.mongodb.net/?retryWrites=true&w=majority' , {
+    useNewUrlParser: true,
+    useCreateIndex: true
+} , 
+() => {
+    console.log("DB Connected!");
+}
+);
