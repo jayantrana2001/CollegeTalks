@@ -20,6 +20,103 @@
         <div class="row d-flex justify-content-center" id="main_box">
             <div class="card col-4" id="main_box_interview" style="width: 18rem;">
 
+                <div class="card-body">
+                    <img src="/img/google-logo.jpeg" class="card-img-top" alt="...">
+                    <h5 class="card-title">
+                        <%= blog1.title %>
+                    </h5>
+                    <% if(blog1.content.length>150){%>
+                        <% str1=blog1.content;%>
+                            <% str1=str1.substring(0,180);%>
+                                <p class="card-text">
+                                    <%= str1 %> . . .
+                                </p>
+                                <%} else{%>
+                                    <% str1=blog1.content; %>
+                                        <p class="card-text">
+                                            <%= str1 %>
+                                        </p>
+                                        <% }%>
+                                            </p>
+                                            <a href="/content/<%= blog1._id %>" class="btn btn-primary">Read
+                                                More...</a>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card ">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= blog2.title %>
+                                </h5>
+                                <% if(blog2.content.length>75){%>
+                                    <% str2=blog2.content;%>
+                                        <% str2=str2.substring(0,100);%>
+                                            <p class="card-text">
+                                                <%= str2 %>...
+                                            </p>
+                                            <% } else{%>
+                                                <% str2=blog2.content; %>
+                                                    <p class="card-text">
+                                                        <%= str2 %>
+                                                    </p>
+                                                    <% }%>
+                                                        <a href="/content/<%= blog2._id %>" class="btn btn-primary">Read
+                                                            More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= blog3.title %>
+                                </h5>
+                                <% if(blog3.content.length>75){%>
+                                    <% str3=blog3.content;%>
+                                        <% str3=str3.substring(0,100);%>
+                                            <p class="card-text">
+                                                <%= str3 %>...
+                                            </p>
+                                            <% } else{%>
+                                                <% str3=blog3.content; %>
+                                                    <p class="card-text">
+                                                        <%= str3 %>
+                                                    </p>
+                                                    <% }%>
+                                                        <a href="/content/<%= blog3._id %>" class="btn btn-primary">Read
+                                                            More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Notice : <%= notice.title %>
+                        </h5>
+                        <p class="card-text">
+                            <% if(notice.content.length>75){%>
+                                <% str4=notice.content;%>
+                                    <% str4=str4.substring(0,100);%>
+                                        <p class="card-text">
+                                            <%= str4 %>...
+                                        </p>
+                                        <% } else{%>
+                                            <% str4=notice.content; %>
+                                                <p class="card-text">
+                                                    <%= str4 %>
+                                                </p>
+                                                <% }%>
+
+                                                    <a href="/content/<%= notice._id %>" class="btn btn-primary">Read
+                                                        More...</a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <script>
