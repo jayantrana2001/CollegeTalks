@@ -77,11 +77,3 @@ app.listen(port, () => console.log(`Listening on port ${port}...`));
 mongoose.connect(MONGODB_URI, () => {
     console.log("connected to db");
 })
-// mongoose.connect('mongodb+srv://jayant_rana6:1234@cluster0.bnddnvs.mongodb.net/?retryWrites=true&w=majority' , {
-//     useNewUrlParser: true,
-//     useCreateIndex: true
-// } , 
-// () => {
-//     console.log("DB Connected!");
-// }
-// );
