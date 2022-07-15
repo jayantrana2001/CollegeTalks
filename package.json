@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "node",
     "build": "node build",
-    "start": "node start",
+    "start": "node index.js",
     "generate": "node generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "heroku-postbuild": "npm run build"
