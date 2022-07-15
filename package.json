@@ -8,12 +8,7 @@
     "npm" : "6.14.8"
   },
   "scripts": {
-    "dev": "node",
-    "build": "node build",
-    "start": "node index.js",
-    "generate": "node generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "heroku-postbuild": "npm run build"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
