@@ -2,6 +2,7 @@
 
   <head>
     <link rel="stylesheet" href="/blog.css">
+    <script src="/js/singleBlog.js"></script>
   </head>
 
   <div>
@@ -46,15 +47,8 @@
                               <%= str1 %>
                             </p>
                             <% }%>
-                              <% var x=0; %>
-                                <%for(let j in blogs){%>
-                                  <%if(blogs[j].title==profilePost[i].title){%>
-                                    <% x=j; %>
-                                      <% break; %>
-                                        <% } %>
-                                          <% } %>
-                                            <a href="/content/<%= profilePost[i]._id %>" class="btn btn-info">Read
-                                              More</a>
+                              <a href="/content/<%= profilePost[i]._id %>" class="btn btn-info">Read
+                                More</a>
                 </div>
                 <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
                   <div class="views">
@@ -62,8 +56,8 @@
                       <%= str2 %>
                   </div>
                   <div class="stats">
-                    <button class="fa-solid fa-heart" id="upvote" onclick="myFunction()">
-                      <%= (profilePost[i].upvote) %>
+                    <button class="fa-solid fa-heart" id="like" onclick="myFunction('<%= profilePost[i]._id %>')">
+                    </button>
                   </div>
 
                 </div>
@@ -105,15 +99,9 @@
                                 <%= str1 %>
                               </p>
                               <% }%>
-                                <% var x=0; %>
-                                  <%for(let j in blogs){%>
-                                    <%if(blogs[j].title==profilePost[i].title){%>
-                                      <% x=j; %>
-                                        <% break; %>
-                                          <% } %>
-                                            <% } %>
-                                              <a href="/content/<%= profilePost[i]._id %>" class="btn btn-info">Read
-                                                More</a>
+
+                                <a href="/content/<%= profilePost[i]._id %>" class="btn btn-info">Read
+                                  More</a>
                   </div>
                   <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
                     <div class="views">
@@ -121,8 +109,8 @@
                         <%= str2 %>
                     </div>
                     <div class="stats">
-                      <button class="fa-solid fa-heart" id="upvote" onclick="myFunction()">
-                        <%= (profilePost[i].upvote) %>
+                      <button class="fa-solid fa-heart" id="like" onclick="myFunction('<%= profilePost[i]._id %>')">
+                      </button>
                     </div>
 
                   </div>
@@ -161,15 +149,9 @@
                                   <%= str1 %>
                                 </p>
                                 <% }%>
-                                  <% var x=0; %>
-                                    <%for(let j in blogs){%>
-                                      <%if(blogs[j].title==profilePost[i].title){%>
-                                        <% x=j; %>
-                                          <% break; %>
-                                            <% } %>
-                                              <% } %>
-                                                <a href="/content/<%= profilePost[i]._id %>" class="btn btn-info">Read
-                                                  More</a>
+
+                                  <a href="/content/<%= profilePost[i]._id %>" class="btn btn-info">Read
+                                    More</a>
                     </div>
                     <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
                       <div class="views">
