@@ -13,6 +13,8 @@ A Responsive platform for College students to post Blogs, share their Interview 
 * Likes & Dislikes on posts
 * An efficient Search Bar to look up for any type of posts
 
+## Heroku
+https://college-talks.herokuapp.com
 
 ## Demo
 
